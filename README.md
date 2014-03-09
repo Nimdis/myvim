@@ -41,19 +41,21 @@ The second thing is configs. You can always find it in [vimrc](https://github.co
 ##Installation
 1. Clone the repo into your .vim directory.
 
-    git clone https://github.com/Nimdis/myvim ~/.vim
+        git clone https://github.com/Nimdis/myvim ~/.vim
 
 2. Now you should create .vimrc and add preconfigured vimrc from the repo.
 
-    echo "source ~/.vim/vimrc" > ~/.vimrc
+        echo "source ~/.vim/vimrc" > ~/.vimrc
 
-3. Run out of vim the command below
-    :BundleInstall
+3. Run out of vim the command below  
+
+        :BundleInstall
 
 4. Install or take patched [fonts](https://powerline.readthedocs.org/en/latest/fontpatching.html)
-5. Optional, if you going to use markdown previewer execute following command in your command line
-    gem install pygments.rb
-    gem install redcarpet
-    npm -g install instant-markdown-d
+5. Optional, if you going to use markdown previewer execute following command in your command line  
+
+        gem install pygments.rb
+        gem install redcarpet
+        npm -g install instant-markdown-d
 
 6. That's it! =) Enjoy your new vim!
