@@ -364,7 +364,7 @@ endif
 au BufNewFile,BufRead *.ejs set filetype=html
 
 "uncomment if you want enable spell checking in md
-"autocmd BufNewFile,BufRead *.md set spell
+autocmd BufNewFile,BufRead *.md set spell
 
 "airline configs
 let g:airline#extensions#tabline#enabled = 1
