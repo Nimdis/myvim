@@ -1,5 +1,7 @@
 source ~/.vim/vundles/vundle.vim
 
+source ~/.vim/vundles/airline.vim
+source ~/.vim/vundles/auto-pairs.vim
 source ~/.vim/vundles/autoclose.vim
 source ~/.vim/vundles/coffee-script.vim
 source ~/.vim/vundles/colors-solarized.vim
@@ -17,8 +19,11 @@ source ~/.vim/vundles/markdown.vim
 source ~/.vim/vundles/nerdcommenter.vim
 source ~/.vim/vundles/nerdtree.vim
 source ~/.vim/vundles/preview.vim
+source ~/.vim/vundles/rails-apidock.vim
 source ~/.vim/vundles/rails.vim
 source ~/.vim/vundles/scss-syntax.vim
+source ~/.vim/vundles/snipmate.vim
+source ~/.vim/vundles/snippets.vim
 source ~/.vim/vundles/stylus.vim
 source ~/.vim/vundles/supertab.vim
 source ~/.vim/vundles/surround.vim
