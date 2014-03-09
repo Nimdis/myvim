@@ -365,3 +365,7 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 "uncomment if you want enable spell checking in md
 "autocmd BufNewFile,BufRead *.md set spell
+
+"airline configs
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
