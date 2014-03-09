@@ -59,3 +59,6 @@ The second thing is configs. You can always find it in [vimrc](https://github.co
         npm -g install instant-markdown-d
 
 6. That's it! =) Enjoy your new vim!
+
+##Thanks
+Inspired by https://github.com/akitaonrails/vimfiles and https://github.com/evserykh/vimfiles
