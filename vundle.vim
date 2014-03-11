@@ -2,7 +2,6 @@ source ~/.vim/vundles/vundle.vim
 
 source ~/.vim/vundles/airline.vim
 source ~/.vim/vundles/auto-pairs.vim
-source ~/.vim/vundles/autoclose.vim
 source ~/.vim/vundles/coffee-script.vim
 source ~/.vim/vundles/colors-solarized.vim
 source ~/.vim/vundles/ctrlp.vim
