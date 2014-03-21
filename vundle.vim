@@ -5,6 +5,7 @@ source ~/.vim/vundles/auto-pairs.vim
 source ~/.vim/vundles/coffee-script.vim
 source ~/.vim/vundles/colors-solarized.vim
 source ~/.vim/vundles/ctrlp.vim
+source ~/.vim/vundles/dash.vim
 source ~/.vim/vundles/emmet.vim
 source ~/.vim/vundles/endwise.vim
 source ~/.vim/vundles/fugitive.vim
