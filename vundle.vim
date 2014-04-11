@@ -18,7 +18,6 @@ source ~/.vim/vundles/markdown.vim
 source ~/.vim/vundles/nerdcommenter.vim
 source ~/.vim/vundles/nerdtree.vim
 source ~/.vim/vundles/preview.vim
-source ~/.vim/vundles/python-mode.vim
 source ~/.vim/vundles/rails-apidock.vim
 source ~/.vim/vundles/rails.vim
 source ~/.vim/vundles/scss-syntax.vim
