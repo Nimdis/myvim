@@ -1,1 +1,1 @@
-Bundle 'greyblake/vim-preview'
+Plugin 'greyblake/vim-preview'

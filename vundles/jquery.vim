@@ -1,1 +1,1 @@
-Bundle 'itspriddle/vim-jquery'
+Plugin 'itspriddle/vim-jquery'

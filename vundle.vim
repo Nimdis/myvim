@@ -27,6 +27,7 @@ source ~/.vim/vundles/stylus.vim
 source ~/.vim/vundles/supertab.vim
 source ~/.vim/vundles/surround.vim
 source ~/.vim/vundles/syntastic.vim
+source ~/.vim/vundles/task-list.vim
 source ~/.vim/vundles/textobj-rubyblock.vim
 source ~/.vim/vundles/textobj-user.vim
 source ~/.vim/vundles/vim-ruby.vim

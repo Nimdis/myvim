@@ -242,7 +242,7 @@ nnoremap <leader>bg :BuffergatorToggle<cr>
 let g:buffergator_autoexpand_on_split = 0
 
 "map to CommandT TextMate style finder
-nnoremap <leader>t :CommandT<CR>
+nnoremap <leader>r :CommandT<CR>
 
 "map Q to something useful
 noremap Q gq
@@ -368,3 +368,5 @@ autocmd BufNewFile,BufRead *.md set spell
 "airline configs
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+
+set shell=bash\ -i

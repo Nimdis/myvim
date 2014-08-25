@@ -1,1 +1,1 @@
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'

@@ -1,1 +1,1 @@
-Bundle 'wavded/vim-stylus'
+Plugin 'wavded/vim-stylus'

@@ -1,1 +1,1 @@
-Bundle 'Townk/vim-autoclose'
+Plugin 'Townk/vim-autoclose'

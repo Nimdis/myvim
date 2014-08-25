@@ -1,1 +1,1 @@
-Bundle 'digitaltoad/vim-jade'
+Plugin 'digitaltoad/vim-jade'

@@ -1,1 +1,1 @@
-Bundle 'tpope/vim-markdown'
+Plugin 'tpope/vim-markdown'

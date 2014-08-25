@@ -1,1 +1,1 @@
- Bundle 'bling/vim-airline'
+ Plugin 'bling/vim-airline'

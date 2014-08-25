@@ -1,1 +1,1 @@
-Bundle 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdtree'
