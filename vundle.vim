@@ -1,33 +1,58 @@
-source ~/.vim/vundles/vundle.vim
+set nocompatible                      " be improved
+filetype off                          " required!
 
-source ~/.vim/vundles/airline.vim
-source ~/.vim/vundles/auto-pairs.vim
-source ~/.vim/vundles/coffee-script.vim
-source ~/.vim/vundles/colors-solarized.vim
-source ~/.vim/vundles/ctrlp.vim
-source ~/.vim/vundles/emmet.vim
-source ~/.vim/vundles/endwise.vim
-source ~/.vim/vundles/fugitive.vim
-source ~/.vim/vundles/gundo.vim
-source ~/.vim/vundles/haml.vim
-source ~/.vim/vundles/html5.vim
-source ~/.vim/vundles/indexed-search.vim
-source ~/.vim/vundles/jade.vim
-source ~/.vim/vundles/jquery.vim
-source ~/.vim/vundles/markdown.vim
-source ~/.vim/vundles/nerdcommenter.vim
-source ~/.vim/vundles/nerdtree.vim
-source ~/.vim/vundles/preview.vim
-source ~/.vim/vundles/rails-apidock.vim
-source ~/.vim/vundles/rails.vim
-source ~/.vim/vundles/scss-syntax.vim
-source ~/.vim/vundles/snipmate.vim
-source ~/.vim/vundles/snippets.vim
-source ~/.vim/vundles/stylus.vim
-source ~/.vim/vundles/supertab.vim
-source ~/.vim/vundles/surround.vim
-source ~/.vim/vundles/syntastic.vim
-source ~/.vim/vundles/task-list.vim
-source ~/.vim/vundles/textobj-rubyblock.vim
-source ~/.vim/vundles/textobj-user.vim
-source ~/.vim/vundles/vim-ruby.vim
+set rtp+=~/.vim/bundle/vundle/
+
+call vundle#begin()
+
+Plugin 'gmarik/vundle'
+
+Plugin 'bling/vim-airline'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'Townk/vim-autoclose'
+Plugin 'xsbeats/vim-blade'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'kien/ctrlp.vim'
+Plugin 'mattn/emmet-vim'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-fugitive'
+Plugin 'whatyouhide/vim-gotham'
+Plugin 'sjl/gundo.vim'
+Plugin 'tpope/vim-haml'
+Plugin 'othree/html5.vim'
+Plugin 'henrik/vim-indexed-search'
+Plugin 'digitaltoad/vim-jade'
+Plugin 'itspriddle/vim-jquery'
+Plugin 'tpope/vim-markdown'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'stanangeloff/php.vim'
+Plugin 'honza/vim-snippets'
+Plugin 'wavded/vim-stylus'
+Plugin 'ervandew/supertab'
+Plugin 'tpope/vim-surround'
+Plugin 'scrooloose/syntastic'
+Plugin 'vim-scripts/TaskList.vim'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'kana/vim-textobj-user'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'greyblake/vim-preview'
+Plugin 'tpope/vim-rails'
+Plugin 'cakebaker/scss-syntax.vim'
+Plugin 'elzr/vim-json'
+Plugin 'mustache/vim-mustache-handlebars'
+
+" dependeicies
+Plugin 'xolox/vim-shell'
+Plugin 'xolox/vim-misc'
+
+Plugin 'xuwupeng2000/vim-rails-apidock'
+
+" dependeicies
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+
+Plugin 'garbas/vim-snipmate'
+
+call vundle#end()

@@ -1,7 +1,8 @@
-"avoiding annoying CSApprox warning message
-let g:CSApprox_verbose_level = 0
+source ~/.vim/vundle.vim
 
-filetype off
+"Avoiding annoying CSApprox warning message
+let g:CSApprox_verbose_level = 0
+let mapleader = ","
 
 "Use Vim settings, rather then Vi settings (much better!).
 "This must be first, because it changes other options as a side effect.
@@ -10,23 +11,25 @@ set nocompatible
 "allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-source ~/.vim/vundle.vim
-
 "store lots of :cmdline history
 set history=1000
 
-set showcmd     "show incomplete cmds down the bottom
-set showmode    "show current mode down the bottom
+"show current commangd going on at the bottom line
+set showcmd
+"also show mode
+set showmode
 
 set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
-set number      "add line numbers
-set showbreak=...
+"add line numbers
+set number
+
+"wrap lines
+set showbreak=..
 set wrap linebreak nolist
 
-"mapping for command key to map navigation thru display lines instead
-"of just numbered lines
+"helps to navigate through wrapped lines
 vmap <D-j> gj
 vmap <D-k> gk
 vmap <D-4> g$
@@ -39,26 +42,25 @@ nmap <D-6> g^
 nmap <D-0> g^
 
 "add some line space for easy reading
-set linespace=2
+set linespace=3
+
+"show current line
+set cursorline!
 
 "disable visual bell
 set visualbell t_vb=
 
-"try to make possible to navigate within lines of wrapped lines
-nmap <Down> gj
-nmap <Up> gk
-set fo=l
+""" STATUSLINE SETUP
 
-"statusline setup
 set statusline=%f       "tail of the filename
 
 "Git
-"set statusline+=%{fugitive#statusline()}
+set statusline+=%{fugitive#statusline()}
 
 "RVM
 set statusline+=%{exists('g:loaded_rvm')?rvm#statusline():''}
 
-set statusline+=%=      "left/right separator
+"set statusline+=%=      "left/right separator
 set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
@@ -228,36 +230,13 @@ colorscheme railscasts
 
 silent! nmap <silent> <Leader>p :NERDTreeToggle<CR>
 
-"make <c-l> clear the highlight as well as redraw
-nnoremap <C-L> :nohls<CR><C-L>
-inoremap <C-L> <C-O>:nohls<CR>
-
-"map to bufexplorer
-nnoremap <leader>b :BufExplorer<cr>
-"map to bufergator
-let g:buffergator_suppress_keymaps = 1
-nnoremap <leader>bg :BuffergatorToggle<cr>
-
-"disable resizing when calling buffergator
-let g:buffergator_autoexpand_on_split = 0
-
-"map to CommandT TextMate style finder
-nnoremap <leader>r :CommandT<CR>
-
-"map Q to something useful
-noremap Q gq
-
 "make Y consistent with C and D
 nnoremap Y y$
-
-"bindings for ragtag
-inoremap <M-o>       <Esc>o
-inoremap <C-j>       <Down>
-let g:ragtag_global_maps = 1
 
 "mark syntax errors with :signs
 let g:syntastic_enable_signs=1
 
+"TODO
 "key mapping for vimgrep result navigation
 map <A-o> :copen<CR>
 map <A-q> :cclose<CR>
@@ -341,6 +320,14 @@ nmap <D-]> >>
 vmap <D-[> <gv
 vmap <D-]> >gv
 
+"Key mapping for easy splits
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+nmap <leader>j :vsp<CR>
+nmap <leader>f :sp<CR>
+
 " when press { + Enter, the {} block will expand.
 imap {<CR> {}<ESC>i<CR><ESC>O
 
@@ -368,5 +355,34 @@ autocmd BufNewFile,BufRead *.md set spell
 "airline configs
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = '|'
+let g:airline_left_alt_sep = '|'
+
+"let nerdtree veiw hidden files
+let NERDTreeShowHidden=1
+
+"php.vim rewritings
+function! PhpSyntaxOverride()
+  hi! def link phpDocTags  phpDefine
+  hi! def link phpDocParam phpType
+endfunction
+
+augroup phpSyntaxOverride
+  autocmd!
+  autocmd FileType php call PhpSyntaxOverride()
+augroup END
+
+set mouse=a
 
 set shell=bash\ -i
+
+nmap <leader>y :set paste<CR>
+nmap <leader>Y :set nopaste<CR>
+
+"81 column highlighting
+augroup vimrc_autocmds
+  autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#592929
+  autocmd BufEnter * match OverLength /\%>80v.\+/
+augroup END

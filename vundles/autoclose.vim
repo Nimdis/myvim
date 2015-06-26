@@ -1,1 +1,0 @@
-Plugin 'Townk/vim-autoclose'

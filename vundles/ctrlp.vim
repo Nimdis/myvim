@@ -1,1 +1,0 @@
-Plugin 'kien/ctrlp.vim'

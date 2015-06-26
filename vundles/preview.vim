@@ -1,1 +1,0 @@
-Plugin 'greyblake/vim-preview'

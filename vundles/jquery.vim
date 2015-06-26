@@ -1,1 +1,0 @@
-Plugin 'itspriddle/vim-jquery'
