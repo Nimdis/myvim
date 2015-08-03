@@ -359,6 +359,8 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = '|'
 let g:airline_left_alt_sep = '|'
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = '|'
 
 "let nerdtree veiw hidden files
 let NERDTreeShowHidden=1
@@ -386,3 +388,15 @@ augroup vimrc_autocmds
   autocmd BufEnter * highlight OverLength ctermbg=darkred guibg=#592929
   autocmd BufEnter * match OverLength /\%>80v.\+/
 augroup END
+
+set guicursor+=a:blinkon0
+set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
+"set guifont=Monoid:h12
+
+
+highlight LineNr guibg=#1a1a1a
+highlight CursorLineNr guibg=#1a1a1a guifg=#2b2b2b
+highlight CursorLine guibg=#1a1a1a
+highlight Search guifg=NONE ctermfg=NONE guibg=#3a2c26 ctermbg=235 gui=underline cterm=underline
+
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
