@@ -400,3 +400,6 @@ highlight CursorLine guibg=#1a1a1a
 highlight Search guifg=NONE ctermfg=NONE guibg=#3a2c26 ctermbg=235 gui=underline cterm=underline
 
 let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
