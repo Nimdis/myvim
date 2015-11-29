@@ -321,10 +321,10 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 "Key mapping for easy splits
-nnoremap <C-J> <C-W><C-J>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+"nnoremap <C-J> <C-W><C-J>
+"nnoremap <C-K> <C-W><C-K>
+"nnoremap <C-L> <C-W><C-L>
+"nnoremap <C-H> <C-W><C-H>
 nmap <leader>j :vsp<CR>
 nmap <leader>f :sp<CR>
 
@@ -394,8 +394,8 @@ set guifont=Droid\ Sans\ Mono\ for\ Powerline:h12
 "set guifont=Monoid:h12
 
 
-highlight LineNr guibg=#1a1a1a
-highlight CursorLineNr guibg=#1a1a1a guifg=#2b2b2b
+highlight LineNr guibg=#1a1a1a ctermfg=238
+highlight CursorLineNr guibg=#1a1a1a guifg=#2b2b2b ctermfg=238
 highlight CursorLine guibg=#1a1a1a
 highlight Search guifg=NONE ctermfg=NONE guibg=#3a2c26 ctermbg=235 gui=underline cterm=underline
 
