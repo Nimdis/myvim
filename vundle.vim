@@ -1,12 +1,16 @@
 set nocompatible                      " be improved
 filetype off                          " required!
 
-set rtp+=~/.vim/bundle/Vundle.vim/
+set rtp+=~/.vim/bundle/vundle/
 
 call vundle#begin()
 
 Plugin 'gmarik/vundle'
 
+Plugin 'christoomey/vim-tmux-navigator'
+Plugin 'isRuslan/vim-es6'
+Plugin 'avdgaag/vim-phoenix'
+Plugin 'elixir-lang/vim-elixir'
 Plugin 'bling/vim-airline'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'Townk/vim-autoclose'
@@ -42,6 +46,7 @@ Plugin 'tpope/vim-rails'
 Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'heartsentwined/vim-emblem'
 
 " dependeicies
 Plugin 'xolox/vim-shell'

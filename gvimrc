@@ -1,1 +1,1 @@
-set transparency=4
+"set transparency=4
