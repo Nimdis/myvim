@@ -353,7 +353,13 @@ au BufNewFile,BufRead *.ejs set filetype=html
 autocmd BufNewFile,BufRead *.md set spell
 
 "airline configs
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
+let g:airline#extensions#tabline#show_splits = 0
+let g:airline#extensions#tabline#show_buffers = 0
+let g:airline#extensions#tabline#show_tab_nr = 0
+let g:airline#extensions#tabline#show_tab_type = 0
+let g:airline#extensions#tabline#show_close_button = 0
+
 let g:airline_powerline_fonts = 1
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
@@ -403,3 +409,7 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
+
+highlight TabLineFill term=none cterm=none ctermfg=238 ctermbg=238
+highlight TabLine term=none cterm=none ctermfg=255 ctermbg=238
+highlight TabLineSel term=none cterm=none ctermfg=0 ctermbg=Yellow
