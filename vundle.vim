@@ -47,6 +47,7 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'heartsentwined/vim-emblem'
+Plugin 'slashmili/alchemist.vim'
 
 " dependeicies
 Plugin 'xolox/vim-shell'
