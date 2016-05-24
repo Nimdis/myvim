@@ -410,6 +410,8 @@ if $COLORTERM == 'gnome-terminal'
   set t_Co=256
 endif
 
+set relativenumber
+
 highlight TabLineFill term=none cterm=none ctermfg=238 ctermbg=238
 highlight TabLine term=none cterm=none ctermfg=255 ctermbg=238
 highlight TabLineSel term=none cterm=none ctermfg=0 ctermbg=Yellow
