@@ -23,7 +23,7 @@ set incsearch   "find the next match as we type the search
 set hlsearch    "hilight searches by default
 
 "add line numbers
-set number
+set nonu
 
 "wrap lines
 set showbreak=..
