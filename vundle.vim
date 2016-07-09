@@ -48,6 +48,7 @@ Plugin 'elzr/vim-json'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'slashmili/alchemist.vim'
+Plugin 'posva/vim-vue'
 
 " dependeicies
 Plugin 'xolox/vim-shell'
