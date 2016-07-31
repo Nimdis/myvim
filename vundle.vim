@@ -49,6 +49,7 @@ Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'heartsentwined/vim-emblem'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'posva/vim-vue'
+Plugin 'kylef/apiblueprint.vim'
 
 " dependeicies
 Plugin 'xolox/vim-shell'
