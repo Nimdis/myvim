@@ -50,6 +50,7 @@ Plugin 'heartsentwined/vim-emblem'
 Plugin 'slashmili/alchemist.vim'
 Plugin 'posva/vim-vue'
 Plugin 'kylef/apiblueprint.vim'
+Plugin 'fatih/vim-go'
 
 " dependeicies
 Plugin 'xolox/vim-shell'
