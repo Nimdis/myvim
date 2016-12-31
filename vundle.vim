@@ -51,6 +51,7 @@ Plugin 'slashmili/alchemist.vim'
 Plugin 'posva/vim-vue'
 Plugin 'kylef/apiblueprint.vim'
 Plugin 'fatih/vim-go'
+Plugin 'digitaltoad/vim-pug'
 
 " dependeicies
 Plugin 'xolox/vim-shell'
